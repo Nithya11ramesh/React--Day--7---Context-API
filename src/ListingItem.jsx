@@ -43,15 +43,15 @@ const ListingItem = () => {
             </div>
             <div className="col">
               <h2>
-                INR :{" "}
+                INR :${" "}
                 <span style={{ textDecoration: "line-through" }}>
                   {listingId.price}
                 </span>
               </h2>
-              <p>Disc (%) : {listingId.discountPercentage}</p>
+              <p>Discount : {listingId.discountPercentage}%</p>
               {/* Calculated Total price from Discounted Percentage */}
               <h3>
-                Price/Qty :{" "}
+                Price:${" "}
                 {(
                   listingId.price -
                   (listingId.price * listingId.discountPercentage) / 100

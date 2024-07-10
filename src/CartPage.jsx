@@ -29,15 +29,15 @@ const CartPage = () => {
             </div>
             <div className="col">
               <h2>
-                INR :{" "}
+                INR :${" "}
                 <span style={{ textDecoration: "line-through" }}>
                   {cart.price}
                 </span>
               </h2>
-              <p>Disc (%) : {cart.discountPercentage}</p>
+              <p>Discount: {cart.discountPercentage}%</p>
               {/* Calculated Total price from Discounted Percentage */}
               <h3>
-                Total Price :{" "}
+                Total Price :${" "}
                 {(
                   cart.price -
                   (cart.price * cart.discountPercentage) / 100
